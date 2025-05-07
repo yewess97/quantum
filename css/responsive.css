@@ -1,0 +1,170 @@
+@media only screen and (max-width: 576px) {
+    .top-bar .content > div:first-child {
+        display: none;
+    }
+
+    #section1 .description > h1 {
+        font-size: 1.5rem;
+    }
+
+    #section1 .description > h5 {
+        font-size: 1rem;
+    }
+
+    #contact_section .customers-reviews {
+        --bs-gutter-x: 0;
+    }
+
+    #contact_section .customers-reviews {
+        padding-inline: 2rem;
+    }
+
+    #contact_section .contact form,
+    #contact_section .contact form > .row {
+        gap: 0.5rem;
+    }
+
+    .pagination .page-link {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.875rem;
+    }
+
+    #footer_section .footer .footer-content .details > .about-social {
+        gap: 1rem;
+    }
+
+    #footer_section .footer .footer-content .details > .contact > li > i {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .top-bar {
+        height: 45px;
+    }
+
+    .top-bar .content {
+        justify-content: center;
+    }
+
+    .top-bar .social {
+        display: none;
+    }
+
+    .quantum-tutorials {
+        padding: 3rem 0;
+    }
+    
+    .quantum-card {
+        margin-bottom: 2rem;
+    }
+    
+    .file-type {
+        font-size: 1.2rem;
+    }
+    
+    .quantum-icon {
+        font-size: 1.5rem;
+    }
+    
+    .quantum-title {
+        font-size: 2rem;
+    }
+    
+    .quantum-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    #patents .card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar .nav-btn,
+    .navbar #navbarNav .navbar-nav > .nav-item:last-child {
+        display: flex;
+    }
+
+    .navbar #navbarNav {
+        padding-block: 2rem;
+    }
+
+    .navbar #navbarNav .navbar-nav > .nav-item:last-child {
+        gap: 1rem;
+    }
+
+    .navbar #navbarNav .navbar-nav .nav-item:last-child > label {
+        display: block;
+    }
+
+    .navbar #navbarNav .navbar-nav .nav-item:last-child > a {
+        padding: 0.8rem;
+        border: solid 2px #ffc107;
+        border-radius: 50%;
+        box-shadow: 2px 1px 8px #ffc107;
+        background: rgb(255 193 7 / 85%);
+        color: #ffffff !important;
+    }
+
+    #section1 .description {
+        padding-block: 3rem;
+    }
+
+    #section3 .services-cards > .row > .row:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+
+    #contact_section > .contact > .container > .row {
+        justify-content: center;
+        margin-inline: 0;
+        text-align: center;
+    }
+
+    #contact_section > .contact > .container > .row > form,
+    #contact_section > .contact > .container > .row > form *,
+    #footer_section .footer .footer-content .details > .about-social > li {
+        margin: 0;
+    }
+
+    #footer_section .footer {
+        gap: 3.5rem;
+    }
+
+    #footer_section .footer .footer-content .details > .about-social > li {
+        max-width: 3rem;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1200px) {
+    #section1 .description > h1 {
+        font-size: 2rem;
+    }
+
+    #section1 .description > h5 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    #section1 {
+        padding-block: 3rem;
+    }
+
+    #footer_section .footer .footer-content .details > .about-social > li {
+        padding: 0.3rem;
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #footer_section .footer > div:nth-child(2) > .footer-content,
+    #footer_section .footer > div:last-child > .footer-content {
+        padding-left: 3rem;
+    }
+
+    #footer_section .footer > div:nth-child(3) > .footer-content {
+        padding-left: 1rem;
+    }
+}
