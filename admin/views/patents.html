@@ -1,0 +1,84 @@
+<section class="content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">All Patents</h3>
+                <button class="btn btn-warning btn-sm float-right" data-toggle="modal" data-target="#addPatentModal">
+                    <i class="fas fa-plus"></i> Add New
+                </button>
+            </div>
+            <div class="card-body p-0">
+                <table class="table table-bordered admin-table m-0">
+                    <thead>
+                        <tr>
+                            <th>Patent ID</th>
+                            <th>Title</th>
+                            <th>Status</th>
+                            <th>Registration Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>QRAM-2025-001</td>
+                            <td>Quantum Memory Device</td>
+                            <td><span class="badge bg-success">Approved</span></td>
+                            <td>2025-03-15</td>
+                            <td class="action-buttons">
+                                <button class="btn btn-warning btn-sm mr-1" title="Edit">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm" title="Delete">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                                <button class="btn btn-info btn-sm ml-1" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add Patent Modal -->
+<div class="modal fade" id="addPatentModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-warning">Register New Patent</h5>
+                <button type="button" class="close text-light" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Patent Title</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Patent Number</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Upload Documents (PDF)</label>
+                        <input type="file" class="form-control-file" accept=".pdf" multiple>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer bg-light">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-warning">Register</button>
+            </div>
+        </div>
+    </div>
+</div>

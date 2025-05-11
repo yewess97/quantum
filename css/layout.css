@@ -1,0 +1,100 @@
+/***************************** Topbar Style *****************************/
+.top-bar {
+    height: 40px;
+}
+
+.top-bar .content p {
+    font-size: 0.9rem;
+}
+
+.top-bar .content p > i {
+    margin-right: 0.5rem;
+}
+
+.top-bar .social a {
+    font-size: 1.1rem;
+}
+
+/***************************** Navbar Style *****************************/
+.navbar .logo .logo-container {
+    width: 25px;
+}
+
+.navbar .logo .logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar .logo .logo-container span {
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar .logo p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+
+.navbar .nav-btn {
+    display: none;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+    color: #ffffff;
+    transition: all 0.2s ease-in;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: var(--c-action-primary);
+    border-bottom: 1px solid var(--c-action-primary);
+}
+
+.navbar .navbar-nav .nav-item .nav-link:not(.auth-link).active {
+    font-weight: 600;
+    color: var(--c-action-primary);
+    border: 1px solid var(--c-action-primary);
+    border-radius: 0 10px 10px;
+}
+
+.navbar .navbar-nav .nav-item:last-child > label {
+    display: none;
+}
+
+/***************************** Footer Section Style *****************************/
+#footer_section {
+    padding: 4.5rem 0 6rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url("../images/bg2.jpg") no-repeat center center/cover;
+}
+
+#footer_section .footer .footer-content .details > .row {
+    --bs-gutter-x: 0;
+}
+
+#footer_section .footer .footer-content .details .footer-logo .logo .logo-container {
+    width: 25px;
+    font-size: 1.25rem;
+}
+
+#footer_section .footer .footer-content .details .footer-logo .logo .logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#footer_section .footer .footer-content .details .footer-logo .logo p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+
+#footer_section .footer .footer-content .details .about-social > li {
+    margin: auto;
+    padding: 0.6rem;
+}
+
+#footer_section .footer .footer-content .details .posts > li > span {
+    width: fit-content;
+    padding: 0.6rem;
+}

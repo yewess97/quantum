@@ -1,0 +1,125 @@
+:root {
+    --qram-yellow: #ffc107;
+    --qram-dark: #212529;
+    --qram-light: #f8f9fa;
+}
+
+/* Branding */
+.brand-link {
+    background-color: var(--qram-dark) !important;
+    border-bottom: 2px solid var(--qram-yellow) !important;
+}
+
+.brand-text {
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Sidebar */
+[class*="sidebar-dark-"] {
+    background-color: var(--qram-dark) !important;
+}
+
+.nav-sidebar .nav-item > .nav-link {
+    color: var(--qram-light);
+    transition: all 0.3s ease;
+}
+
+.nav-sidebar .nav-item > .nav-link.active {
+    background-color: var(--qram-yellow) !important;
+    color: var(--qram-dark) !important;
+}
+
+.nav-sidebar .nav-item > .nav-link:hover {
+    background: rgba(255, 193, 7, 0.8) !important;
+    color: var(--qram-dark) !important;
+}
+
+/* Cards */
+.card-header {
+    background-color: var(--qram-dark) !important;
+    color: white !important;
+    border-bottom: 2px solid var(--qram-yellow) !important;
+}
+
+/* Buttons */
+.btn-warning {
+    background-color: var(--qram-yellow) !important;
+    border-color: var(--qram-yellow) !important;
+    color: var(--qram-dark) !important;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800 !important;
+    border-color: #d39e00 !important;
+}
+
+/* Content Header */
+.content-header {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)) !important;
+    padding: 15px 20px !important;
+}
+
+/* Stats Cards */
+.qram-stats-card {
+    border-left: 4px solid var(--qram-yellow);
+    background: white;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.qram-stats-card:hover {
+    transform: translateY(-5px);
+}
+
+.qram-stats-value {
+    color: var(--qram-yellow);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Tables */
+.admin-table {
+    width: 100%;
+}
+
+.admin-table th {
+    background-color: var(--qram-dark);
+    color: white;
+    padding: 12px;
+}
+
+.admin-table td {
+    vertical-align: middle;
+}
+
+.admin-table tr:hover {
+    background-color: rgba(255, 193, 7, 0.05);
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--qram-dark) !important;
+    padding: 15px !important;
+}
+
+/* Action Buttons */
+.action-buttons .btn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wrapper adjustment for footer */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    flex: 1;
+}
